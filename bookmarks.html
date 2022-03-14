@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bookmarks.css">
+    <title>Bookmarks</title>
+</head>
+<body>
+    <section class="container bookmarks block__style">
+        <div class="bookmarks__header">
+            <input type="radio" class="bookmarks__radio" name="bookmarks-list" id="all">
+            <input type="radio" class="bookmarks__radio" name="bookmarks-list" id="people" checked>
+            <input type="radio" class="bookmarks__radio" name="bookmarks-list" id="events">
+            <div class="controls">
+                <label for="all" class="bookmarks__label">Все</label>
+                <label for="people" class="bookmarks__label">Люди</label>
+                <label for="events" class="bookmarks__label">События</label>
+            </div>
+            <!-- класс "bookmark__delete" относится только к закладкам-->
+            <div class="content">
+                <div class="bookmarks__content bookmarks__all">
+                <div id="bookmarks-all" class="all">
+                    Контент
+                </div>
+                </div>
+                <div class="bookmarks__content">
+                    <div class="people" id="bookmarks-people">
+                        <ul class="people__content">
+                            <li class="people__item bookmark__delete">
+                                <div class="people__image">
+                                    <img class="people__img" src="./imgs/pic1.png" alt="avatar">
+                                    <button class="delete__user" type="button">
+                                        <img src="./imgs/delete.svg" alt="delete-user">
+                                    </button>
+                                    <div class="additional__block">
+                                        <a class="actions message" href="#">
+                                            <img src="./imgs/message.svg" alt="message">
+                                        </a>
+                                        <button class="actions append" type="button">
+                                            <img src="./imgs/append.svg" alt="append">
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="people__text">Алиса</p>
+                            </li>
+                            <li class="people__item bookmark__delete">
+                                <div class="people__image">
+                                    <img class="people__img" src="./imgs/pic2.png" alt="avatar">
+                                    <button class="delete__user" type="button">
+                                        <img src="./imgs/delete.svg" alt="delete-user">
+                                    </button>
+                                    <div class="additional__block">
+                                        <a class="actions message" href="#">
+                                            <img src="./imgs/message.svg" alt="message">
+                                        </a>
+                                        <button class="actions append" type="button">
+                                            <img src="./imgs/append.svg" alt="append">
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="people__text">Владимир</p>
+                            </li>
+                            <li class="people__item bookmark__delete">
+                                <div class="people__image">
+                                    <img class="people__img" src="./imgs/pic3.png" alt="avatar">
+                                    <button class="delete__user" type="button">
+                                        <img src="./imgs/delete.svg" alt="delete-user">
+                                    </button>
+                                    <div class="additional__block">
+                                        <a class="actions message" href="#">
+                                            <img src="./imgs/message.svg" alt="message">
+                                        </a>
+                                        <button class="actions append" type="button">
+                                            <img src="./imgs/append.svg" alt="append">
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="people__text">Антон</p>
+                            </li>
+                            <li class="people__item bookmark__delete">
+                                <div class="people__image">
+                                    <img class="people__img" src="./imgs/pic4.png" alt="avatar">
+                                    <button class="delete__user" type="button">
+                                        <img src="./imgs/delete.svg" alt="delete-user">
+                                    </button>
+                                    <div class="additional__block">
+                                        <a class="actions message" href="#">
+                                            <img src="./imgs/message.svg" alt="message">
+                                        </a>
+                                        <button class="actions append" type="button">
+                                            <img src="./imgs/append.svg" alt="append">
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="people__text">Анна</p>
+                            </li>
+                            <li class="people__item bookmark__delete">
+                                <div class="people__image">
+                                    <img class="people__img" src="./imgs/pic5.png" alt="avatar">
+                                    <button class="delete__user" type="button">
+                                        <img src="./imgs/delete.svg" alt="delete-user">
+                                    </button>
+                                    <div class="additional__block">
+                                        <a class="actions message" href="#">
+                                            <img src="./imgs/message.svg" alt="message">
+                                        </a>
+                                        <button class="actions append" type="button">
+                                            <img src="./imgs/append.svg" alt="append">
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="people__text">Валерия</p>
+                            </li>
+                            <li class="people__item bookmark__delete">
+                                <div class="people__image">
+                                    <img class="people__img" src="./imgs/pic6.png" alt="avatar">
+                                    <button class="delete__user" type="button">
+                                        <img src="./imgs/delete.svg" alt="delete-user">
+                                    </button>
+                                    <div class="additional__block">
+                                        <a class="actions message" href="#">
+                                            <img src="./imgs/message.svg" alt="message">
+                                        </a>
+                                        <button class="actions append" type="button">
+                                            <img src="./imgs/append.svg" alt="append">
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="people__text">Сергей</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bookmarks__content bookmarks__events">
+                <div class="events" id="bookmarks-events">
+                    Контент
+                </div>
+                </div>
+            </div>
+            </div>
+    </section>
+</body>
+</html>

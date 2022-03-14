@@ -1,0 +1,40 @@
+.bookmarks {
+    margin-top: 30px;
+    &__label {
+        margin-right: 30px;
+        cursor: pointer;
+        position: relative;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__radio {
+        appearance: none;
+        position: absolute;
+    }
+    &__content {
+        display: none;
+    }
+}
+
+.controls {
+    border-bottom: 2px solid $gray_3;
+    padding: 20px 30px;
+}
+
+#all:checked~.controls label[for="all"], #people:checked~.controls label[for="people"], #events:checked~.controls label[for="events"] {
+    font-weight: 600;
+    border-bottom: 2px solid $blue;
+}
+
+#all:checked~.content .bookmarks__content:nth-child(1) {
+    display: block;
+}
+    
+#people:checked~.content .bookmarks__content:nth-child(2) {
+    display: block;
+}
+    
+#events:checked~.content .bookmarks__content:nth-child(3) {
+    display: block;
+}
