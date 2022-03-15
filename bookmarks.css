@@ -121,7 +121,7 @@ select {
 #all:checked ~ .controls label[for="all"]::after, #people:checked ~ .controls label[for="people"]::after, #events:checked ~ .controls label[for="events"]::after {
   content: '';
   position: absolute;
-  top: 101%;
+  top: 100%;
   left: 0;
   width: 100%;
   border-radius: 4px;
