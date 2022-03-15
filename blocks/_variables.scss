@@ -23,3 +23,10 @@ $btn_blue_hover: 0px 0px 7px 1px rgba(81, 162, 242, 0.8);
 $btn_green_focus: 0px 0px 7px 1px rgba(81, 203, 242, 0.8);
 $btn_yellow_default: 0px 6px 14px rgba(255, 229, 92, 0.56);;
 $btn_yellow_hover: 0px 4px 11px rgba(255, 229, 92, 0.56);
+
+@mixin emptyBookmark () {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: $black;
+}

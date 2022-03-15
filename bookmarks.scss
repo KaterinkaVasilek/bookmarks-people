@@ -74,6 +74,11 @@ select {
     box-shadow: 0px 1px 4px rgba(27, 80, 115, 0.13);
     border-radius: $br9;
 }
+.content {
+    padding: 30px;
+    position: relative;
+    min-height: 475px;
+}
 
 @import 'blocks/bookmarks-tabs';
 @import 'blocks/all';

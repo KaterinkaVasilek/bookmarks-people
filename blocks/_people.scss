@@ -2,6 +2,7 @@
     &__content {
         display: grid;
         grid-gap: 30px;
+        justify-items: center;
         grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
     }
     &__item{
@@ -34,7 +35,7 @@
 }
 .bookmark__delete{
     &:hover{
-        .delete__user{
+        .delete__user, .delete__event{
             opacity: 1;
             pointer-events: all;
             transform: translateY(5px);
@@ -68,7 +69,7 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    img{
+    & img{
         position: absolute;
         top: 50%;
         left: 50%;
@@ -78,7 +79,45 @@
         -moz-transform: translate(-50%,-50%);
         -ms-transform: translate(-50%,-50%);
         -o-transform: translate(-50%,-50%);
+    }
+    &:focus{
+        outline: 1px solid $blue;
+    }
 }
+.delete__event {
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    right: -13px;
+    top: -15px;
+    border: none;
+    cursor: pointer;
+    background: $gray_0;
+    border-radius: 50%;
+    transition: .3s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    & img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+    }
     &:focus{
         outline: 1px solid $blue;
     }

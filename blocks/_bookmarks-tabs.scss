@@ -1,5 +1,6 @@
 .bookmarks {
     margin-top: 30px;
+    min-height: 530px;
     &__label {
         margin-right: 30px;
         cursor: pointer;
@@ -12,6 +13,7 @@
     }
     &__radio {
         appearance: none;
+        position: absolute;
     }
     &__content {
         display: none;
@@ -20,13 +22,11 @@
 
 .controls {
     border-bottom: 2px solid $gray_3;
-    padding: 20px 30px;
+    padding: 19px 30px;
 }
 
 #all:checked~.controls label[for="all"], #people:checked~.controls label[for="people"], #events:checked~.controls label[for="events"] {
     font-weight: 600;
-    //border-bottom: 2px solid $blue;
-    //border-radius: 4px;
     &::after {
         content: '';
         position: absolute;
